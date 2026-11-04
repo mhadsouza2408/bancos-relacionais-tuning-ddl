@@ -10,11 +10,11 @@ INCLUDE (valor_total, cliente_id);
 
 
 ✅ 3. Cenário Otimizado (Depois)
-Query Otimizada: (Neste caso a query permaneceu a mesma, o ganho foi estrutural)
+Query Otimizada: 
 
 Explain Plan Novo:
 
-Plaintext
+
 HashAggregate  (cost=45321.00..45330.00 rows=1000 loops=1)
   ->  Hash Join  (cost=12543.00..34567.00 rows=1500000 loops=1)
         Hash Cond: (v.cliente_id = c.id)
